@@ -4,21 +4,21 @@
 
 1. Primero, descargaremos la siguiente versión [MinGW](https://sourceforge.net/projects/mingw/)
 2. Ejecutamos el archivo `.exe` y le damos siguientes hasta que nos aparesca la siguiente imagen
-<img src="Img/inputAndOutput/img1.png">
+<img src="Img/installation/img1.png">
 3. Seleccionamos los siguientes paquetes
-<img src="Img/inputAndOutput/img2.png">
+<img src="Img/installation/img2.png">
 4. Y aplicamos los cambios; y esperamos a que termine de descargar los paquetes necesarios.
 
-<center><img src="Img/inputAndOutput/img3.png"></center>
+<center><img src="Img/installation/img3.png"></center>
 
 5. Pasamos a editar las variables del entorno del sistema
 
-<center><img src="Img/inputAndOutput/img4.png"></center>
-<center><img src="Img/inputAndOutput/img5.png"></center>
+<center><img src="Img/installation/img4.png"></center>
+<center><img src="Img/installation/img5.png"></center>
 
 6. Pasamos a editar las variables del sistema
 
-<center><img src="Img/inputAndOutput/img6.png"></center>
+<center><img src="Img/installation/img6.png"></center>
 
 7. Agregamos las siguientes 2 variables:
 
@@ -36,12 +36,12 @@ Si va a utilizar el IDE de *NetBeans*; tendrá que realizar los siguiente pasos;
  
 1. Nos dirigimos a `Tools>Plugins>Settings` y activamos el siguiente pluggin:
 
-<center><img src="Img/inputAndOutput/img7.png"></center>
+<center><img src="Img/installation/img7.png"></center>
 
 2. Luego nos dirigmos a `Tools>Plugins>Available Plugins` y instalamos el pluggins de C/C++
 
-<center><img src="Img/inputAndOutput/img8.png"></center>
+<center><img src="Img/installation/img8.png"></center>
 
 3. Una vez tengamos instaldo el `MingGW` totalmente instaldo, nos dirigimos a `Tools>Plugins>Options>C/C++`; y debería de ver la ventana; como en la imagen de abajo, caso contrario realiza las modificaciones necesarias.
 
-<center><img src="Img/inputAndOutput/img9.png"></center>
+<center><img src="Img/installation/img9.png"></center>
