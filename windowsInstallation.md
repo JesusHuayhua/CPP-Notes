@@ -29,7 +29,7 @@ c:\MingGW\MSYS\1.0\bin
 
 ## Instalación del IDE
 
-En mi caso por temas universitarios, utilizaré el IDE de [*NetBeans*](https://netbeans.apache.org/download/nb16/);
+En mi caso por temas académicos, utilizaré el IDE de [*NetBeans*](https://netbeans.apache.org/download/nb16/);
 pero se puede utilizar cualquier otro IDE o editor de código de su preferencia.
 
 Si va a utilizar el IDE de *NetBeans*; tendrá que realizar los siguiente pasos; una vez ya lo tenga instalado junto con el *MinGW*
