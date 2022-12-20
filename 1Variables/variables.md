@@ -1,4 +1,4 @@
-<h1> Variables </h1>
+<center><h1> Variables </h1></center>
 
 - [Tipos Fundamentales](#tipos-fundamentales)
   - [bool](#bool)
@@ -135,6 +135,12 @@ operadores declaradores.
  1. Asignar nuevas variables en el heap
  2. Para funciones a otras funciones
  3. Iterar sobre elementos de otras estructuras de datos.
+ 
+ ```CPP
+ int a = 5; // variable simple
+ int *b; // puntero
+ b = &a; // apunto a la dirección de memoria
+ ```
 
 Se profundiza más sobre punteros en los siguiente apuntes: [pointer](../4Punteros/punteros.md)
  ## Array types
@@ -186,7 +192,7 @@ Se profundiza más sobre punteros en los siguiente apuntes: [pointer](../4Punter
  ```
  ## Clases
  
- Las clases son utilizadas en la programación [orientada a objetos]().
+ Las clases serán vista en la programación [orientada a objetos]().
  
  ## Enumeration types
  
@@ -208,12 +214,12 @@ Se profundiza más sobre punteros en los siguiente apuntes: [pointer](../4Punter
  ```CPP
  #include <iostream>
  enum icecream{
-  vanilla,
-  chocolate,
-  butterscotch,
-  strawberry,
-  oreo
- }
+  vainilla, // default value is 0
+  chocolate, // default value is 1
+  butterscotch, // default value is 2
+  strawberry, // default value is 3
+  oreo // default value is 4
+ };
 
  int main(){
   icecream  helado = vanilla;
@@ -233,12 +239,12 @@ Se profundiza más sobre punteros en los siguiente apuntes: [pointer](../4Punter
  #include <iostream>
 
  enum costIcecream{
-  vanilla = 5,
+  vainilla = 5,
   chocolate = 6,
   butterscotch = 7,
   strawberry = 8,
   oreo = 9
- }
+ };
 
  int main(){
   costIcecream  helado1,helado2;
