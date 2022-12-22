@@ -1,13 +1,13 @@
 <center> <h1> Entrada y salida </h1></center>
 
+La entrada y salida de datos, para C++ puede ser de distinta forma.
+
+<center><img src="../Img/inputAndOutput/typesOfInputAndOutput.excalidraw.png"></center>
+
 La entrada o salida de datos, básicos con los que se pueden visualizar en la pantalla,
 normalmente suele ser una terminal. 
 Pero también podemos realizar ingreso y salida de datos, através de un archivos de texto
-# Salida de datos standard
-
-C++, también cuenta con una salida de datos standard, y a su vez cuenta con una
-para los mensaje de error.
-
+# Iostream
 ## COUT
 
 La instancia `cout`, utilizada para la salida estándar que normalmente suele ser
