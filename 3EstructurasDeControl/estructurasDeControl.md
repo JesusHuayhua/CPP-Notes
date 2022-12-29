@@ -4,6 +4,7 @@ Las estructuras de control más utiliziadas son las siguientes:
 
 - [Selectivas](#selectivas)
   - [Ternary Operators](#ternary-operators)
+  - [Switch](#switch)
 - [Iterativas](#iterativas)
   - [Itertiva con entrada controlada](#itertiva-con-entrada-controlada)
   - [Itertiva con salida controlada](#itertiva-con-salida-controlada)
@@ -106,6 +107,122 @@ number == 15 ? std::cout << "Number is 15"<< std::endl : std::cout << "Number is
 number == 15 
 ? std::cout << "Number is 15"<< std::endl  // Verify don't terminate this line whit ';'
 : std::cout << "Number is not 15";
+```
+
+## Switch
+
+Al igual que en el caso del `if...else`, también sirve para poder determinar
+que es lo que se va a realizar; dentro de unos posibles casos:
+
+```CPP
+// Sintaxis
+switch(/*test value*/){
+    case /*case1*/:
+        //body
+        break;
+    case /*case2*/:
+        //body
+        break;
+
+        ...
+
+    case /*casen*/:
+    default:
+        // body
+        break;
+}
+```
+Ejemplos:
+
+```CPP
+int a = 5;
+switch(a){
+    case 1:
+        ...
+        break;
+    case 2:
+        ...
+        break;
+    case 4:
+        ...
+        break;
+    case 5:
+        ...
+        break;
+    default:
+        ...
+        break;
+}
+```
+
+El uso del `break` sirve para indicar que se va a detener y realizar dicho caso;
+en caso no se use se pasará al siguiente `case` que si lo contenga.
+
+El uso del `default`; es el caso que se va a realizar en caso no se cumpla
+ninguno de los casos a evaluar; si no existe el caso `default`; simplemente se pasará.
+
+```CPP
+int a = 5;
+switch(a){
+    case 1:
+    case 2:
+    case 3:
+        std::cout << "The possible value of a is(1,2,3): ";
+        break;
+    case 4:
+    case 5:
+        function(a);
+        break;
+    default:
+        ...
+        break;
+}
+```
+ 
+ > Un problema con el `switch`; es que no se puede tener llamar a funciones para evaluar
+ > el caso; o utilizar expresiones lógicas.
+
+```CPP
+// Examples of compiler errors
+int a = 5;
+switch(a){
+    case 1 || 2://error
+        ...
+        break;
+    case function(a)://error
+        ...
+        break;
+}
+```
+
+> Pero si se puede utilizar expresiones lógicas, para el caso a evaluar.
+
+```CPP
+// Examples of compiler errors
+int a = 5;
+switch(evaluation(a,...,)){
+    case 12.5:
+        ...
+        break;
+    case 'V':
+        ...
+        break;
+    case 'F':
+        ...
+        break;
+    case true:
+        ...
+        break;
+    case false:
+        ...
+        break;
+    case "NAME":
+        ...
+        break;
+    default:
+        ...
+        break;
+}
 ```
 # Iterativas
 

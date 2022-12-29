@@ -9,6 +9,6 @@ int main(){
     std::cout << "Enter the ramdon data ";
     std::cin  >> var; // input data
     std::cout << "The enter value of var is: "<< var << std::endl;
-    std::cout << "The standard character input(often by default a keyboard)";
+    std::cout << "CIN: The standard character input(often by default a keyboard)" << std::endl;
     return 0;
 }

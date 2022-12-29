@@ -19,6 +19,9 @@
   - [1. Inicialización por asignación](#1-inicialización-por-asignación)
   - [2. Inicialización por constructor](#2-inicialización-por-constructor)
   - [3. Inicialización por lista](#3-inicialización-por-lista)
+- [Espacialidad de las variables](#espacialidad-de-las-variables)
+  - [Localidad temporal](#localidad-temporal)
+  - [Localidad Global](#localidad-global)
 
 
 # Tipos Fundamentales
@@ -309,3 +312,62 @@ int main(){
  > Nota: Para las variables fundamentales; es indistinto el utilizar cualquiera
  > de las formas de inicialización.
  
+
+# Espacialidad de las variables
+
+Después de las *variables*, cuenta con una localidad; osea un rango determinado
+para poder usarla.
+
+## Localidad temporal
+
+Estas variables solo funcionan cuando se hace el llamado a la función o se trabaja
+dentro de alguna [*estructura de control*](../3EstructurasDeControl/estructurasDeControl.md);
+por lo tanto solo se puede usar dentro de los `{}`.
+
+De igual manera cuando se hace el llamado a las funciones; solo cuando es invocada
+el compilador de `C/C++`, crea la variable; y cuando se acaba de realizar
+el proposito de la variable, se destruyen.
+
+```CPP
+#include <iostream>
+
+int factorial(int m){
+  if (m == 0 || m == 1) return 1;
+  return m * factorial(m - 1);
+}
+
+int main(){
+  // declaration variable
+  int a = 10;
+  if ( true ){
+    // declaration variable
+    int b = 5;
+    int c = 0;
+    // Variable b y c; online we can use until
+  }else{
+    b = 1; // error compiler
+  }
+  c = 6; // error compiler
+  
+  a = 12; // perfect
+}
+```
+
+## Localidad Global
+
+Estas variables son las que podemos usar en cualquier momento y en cualquier
+archivo.
+
+```CPP
+#include <iostream>
+
+int global;
+
+int main(){
+  global = 10;
+  if (global == 10){
+    global = 11;
+  }
+  global = 15;
+}
+```
